@@ -194,4 +194,7 @@
 
     <!-- Allow screen mirroring/miracast -->
     <bool name="config_enableWifiDisplay">true</bool>
+
+    <!-- Show navbar -->
+    <bool name="config_showNavigationBar">true</bool>
 </resources>
