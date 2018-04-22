@@ -26,4 +26,4 @@ PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Honor View 10
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="The Ground Zero Team"
+    DEVICE_MAINTAINERS="The GzR berkeley team"
