@@ -31,6 +31,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# DPI
+PRODUCT_AAPT_CONFIG := normal xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_NO_KERNEL := false
