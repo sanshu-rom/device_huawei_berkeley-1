@@ -18,4 +18,4 @@ sys.fpnav.enabled=1
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # Radio
-ro.telephony.ril.config=huawei_signalstrength
+ro.telephony.ril.config=huaweiSignalStrength
