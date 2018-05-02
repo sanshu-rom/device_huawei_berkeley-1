@@ -92,10 +92,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vendor.override.security_patch=$(PLATFORM_SECURITY_PATCH) \
     ro.vendor.override.build_display=$(BUILD_ID)
 
-# Recovery
-PRODUCT_PACKAGES += \
-    resize2fs_static
-
 # Release tools
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/releasetools.kirin970.sh:install/bin/releasetools.kirin970.sh
