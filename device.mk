@@ -92,6 +92,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vendor.override.security_patch=$(PLATFORM_SECURITY_PATCH) \
     ro.vendor.override.build_display=$(BUILD_ID)
+    
+# Radio
+PRODUCT_PACKAGES += \
+    qti-telephony-common
 
 # Release tools
 PRODUCT_COPY_FILES += \
