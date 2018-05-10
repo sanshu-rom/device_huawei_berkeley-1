@@ -1,6 +1,6 @@
 [
   {
-    "repository": ""BigTopKrazies/vendor_huawei_berkeley",
+    "repository": "BigTopKrazies/vendor_huawei_berkeley",
     "target_path": "vendor/huawei/berkeley",
     "branch": "8.1"
   }
