@@ -56,13 +56,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/fingerprint.kl:system/usr/keylayout/fingerprint.kl
 
-# IR
 PRODUCT_PACKAGES += \
     irself
 
 PRODUCT_BOOT_JARS += \
     irself
-
+    
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
@@ -92,13 +91,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vendor.override.security_patch=$(PLATFORM_SECURITY_PATCH) \
     ro.vendor.override.build_display=$(BUILD_ID)
-    
-# Radio
-PRODUCT_PACKAGES += \
-    qti-telephony-common
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Release tools
 PRODUCT_COPY_FILES += \
