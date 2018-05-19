@@ -16,10 +16,10 @@
 
 $(call inherit-product, device/huawei/berkeley/full_berkeley.mk)
 
-# Inherit some common gzosp stuff.
-$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
+# Inherit some common tipsy stuff.
+$(call inherit-product, vendor/tipsy/config/common_full_phone.mk)
 
-PRODUCT_NAME := gzosp_berkeley
+PRODUCT_NAME := tipsy_berkeley
 PRODUCT_DEVICE := berkeley
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Honor View 10
