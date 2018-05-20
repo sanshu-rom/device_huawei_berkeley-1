@@ -40,14 +40,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libion
 
-# HIDL
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
-
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/fingerprint.kl:system/usr/keylayout/fingerprint.kl

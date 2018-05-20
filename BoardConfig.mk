@@ -71,6 +71,10 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 
+# hidl manifest
+DEVICE_MANIFEST_FILE := device/huawei/berkeley/manifest.xml
+DEVICE_MATRIX_FILE := device/huawei/berkeley/compatibility_matrix.xml
+
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/lib64/libdisplayenginesvc_1_0.so|libshims_hwsmartdisplay_jni.so \
