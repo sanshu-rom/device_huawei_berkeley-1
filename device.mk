@@ -99,6 +99,15 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHI6403 \
     HotwordEnrollmentXGoogleHI6403
 
+# Huawei Camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/HwCamera2/lib/android.hidl.base@1.0.so:system/lib/android.hidl.base@1.0.so \
+    $(LOCAL_PATH)/HwCamera2/lib64/android.hidl.base@1.0.so:system/lib64/android.hidl.base@1.0.so \
+    $(LOCAL_PATH)/HwCamera2/lib64/libHwPostCamera_jni.so:system/lib64/libHwPostCamera_jni.so
+
+PRODUCT_PACKAGES += \
+    HwCamera2
+
 # VNDK
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/vndk-detect:system/bin/vndk-detect \
