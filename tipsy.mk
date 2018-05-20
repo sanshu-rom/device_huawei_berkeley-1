@@ -17,13 +17,12 @@
 
 $(call inherit-product, device/huawei/berkeley/full_berkeley.mk)
 
-# Inherit some common ValidusOS stuff.
-$(call inherit-product, vendor/validus/config/common_full_phone.mk)
+# Inherit some common TipsyOS stuff.
+$(call inherit-product, vendor/tipsy/config/common_full_phone.mk)
 
-PRODUCT_NAME := validus_berkeley
+PRODUCT_NAME := tipsy_berkeley
 PRODUCT_DEVICE := berkeley
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Honor View 10
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="The GzR berkeley team"
+
