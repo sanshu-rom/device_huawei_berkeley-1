@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
     libshims_hisupl \
     libshims_hwsmartdisplay_jni
 
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleHI6403 \
+    HotwordEnrollmentXGoogleHI6403
+
 # VNDK
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/vndk-detect:system/bin/vndk-detect \
