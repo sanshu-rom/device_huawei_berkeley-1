@@ -14,27 +14,27 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/huawei/berkeley/berkeley-vendor.mk)
+$(call inherit-product-if-exists, vendor/huawei/kirin/kirin-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # APN
-ifeq ($(TARGET_PRODUCT),aosp_berkeley)
+ifeq ($(TARGET_PRODUCT),aosp_kirin)
 PRODUCT_COPY_FILES += \
     device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 endif
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    init.kirin970.rc \
-    init.kirin970.ab.rc \
-    init.kirin970.environ.rc
+    init.kirin.rc \
+    init.kirin.ab.rc \
+    init.kirin.environ.rc
 
 # Display
 PRODUCT_PACKAGES += \
@@ -84,7 +84,7 @@ PRODUCT_BOOT_JARS += \
 
 # Release tools
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/releasetools.kirin970.sh:install/bin/releasetools.kirin970.sh
+    $(LOCAL_PATH)/releasetools/releasetools.kirin.sh:install/bin/releasetools.kirin.sh
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
