@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/huawei/berkeley/full_berkeley.mk)
+$(call inherit-product, device/huawei/berkeley/full_kirin.mk)
 
 # Inherit some common tipsy stuff.
 $(call inherit-product, vendor/tipsy/config/common_full_phone.mk)
 
-PRODUCT_NAME := tipsy_berkeley
-PRODUCT_DEVICE := berkeley
+PRODUCT_NAME := tipsy_kirin
+PRODUCT_DEVICE := kirin
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := Honor View 10
+PRODUCT_MODEL := Honor V8
