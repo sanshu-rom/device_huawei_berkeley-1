@@ -16,7 +16,7 @@
 
 include build/make/target/board/generic_arm64_a/BoardConfig.mk
 
-DEVICE_PATH := device/huawei/berkeley
+DEVICE_PATH := device/huawei/kirin
 
 # Platform
 TARGET_ARCH := arm64
@@ -41,7 +41,7 @@ TARGET_NO_KERNEL := false
 TARGET_PREBUILT_KERNEL := /dev/null
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := berkeley,kirin970
+TARGET_OTA_ASSERT_DEVICE := knt,kirin,hi3650
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -62,7 +62,7 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # Recovery
 BOARD_PROVIDES_BOOTLOADER_MESSAGE := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.kirin970
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.kirin
 
 # Release tools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
